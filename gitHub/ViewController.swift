@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var lblName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("gitHub Use for commit data")
         print(reverse(text: "stressed"))
+        lblName.text = reverse(text: "stressed")
         self.view.backgroundColor = UIColor.purple
         
         // Do any additional setup after loading the view, typically from a nib.
